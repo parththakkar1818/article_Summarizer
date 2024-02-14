@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Article Summarizer",
+    "version": "1.0",
+    "permissions": [
+      "activeTab",
+      "https://article-extractor-and-summarizer.p.rapidapi.com/summarize"
+    ],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "ASPRV_logo.png",
+        "48": "ASPRV_logo.png",
+        "128": "ASPRV_logo.png"
+      }
+    },
+    "content_security_policy": "script-src 'self' https://cdnjs.cloudflare.com https://article-extractor-and-summarizer.p.rapidapi.com; object-src 'self'",
+    "web_accessible_resources": [
+      "popup.js"
+    ]
+  }
+  
